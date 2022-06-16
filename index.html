@@ -1,110 +1,513 @@
-<!DOCTYPE html>
-<html lang="en">
+<html class="has-no-js js-focus-visible is-images-preloaded is-fonts-loaded is-first-loaded has-logo-revealed has-changed-page has-scroll-init has-intro-revealed is-loaded is-ready has-experience-revealed" lang="en" data-template="home" data-theme="dark"
+    data-scroll-theme-main="dark" data-assets-version="202203241345" data-js-focus-visible="" style="--vw:3.57px; --vh:5.7px; --vh-initial:6.57px;" data-scroll-direction="vertical" data-scroll-theme="dark">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Agency - Start Bootstrap Theme</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="imge/pngegg (3).png" />
-    <!-- Font Awesome icons (free version)-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <base href="https://havenstudios.com/">
 
+    <title>Home | Haven Studios</title>
+
+
+
+    <meta name="description" content="We create havens for endless wonder.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://havenstudios.com/en">
+    <meta property="og:site_name" content="Haven Studios">
+    <meta property="og:title" content="Home">
+    <meta property="og:image" content="https://havenstudios.com/uploads/portals/Concept_05_RGB_Meta.jpeg">
+    <meta property="og:description" content="We create havens for endless wonder.">
+
+    <meta property="twitter:title" content="Home">
+    <meta property="twitter:description" content="We create havens for endless wonder.">
+
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="HandheldFriendly" content="true">
+
+    <!-- Appearance -->
+    <meta name="theme-color" content="#ffffff">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://havenstudios.com/assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://havenstudios.com/assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://havenstudios.com/assets/images/favicons/favicon-16x16.png">
+    <link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#524a8a">
+
+    <meta name="msapplication-TileColor" content="#524a8a">
+
+    <!-- Styles -->
+    <style media="all">
+        .c-loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 800;
+            pointer-events: none;
+            color: #F6F5FA;
+        }
+        
+        .c-loader:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #9f1818;
+            z-index: 10;
+            opacity: 0;
+            transition: opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+        
+        html.is-loading .c-loader,
+        html.is-experience-loading .c-loader {
+            pointer-events: all;
+        }
+        
+        html.is-loading .c-loader:before,
+        html.is-experience-loading .c-loader:before {
+            opacity: 1;
+        }
+        
+        .c-loader_spinner {
+            position: absolute;
+            bottom: 2.5rem;
+            right: 2.5rem;
+            z-index: 20;
+            opacity: 0;
+            transition: opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+        
+        html.is-loading .c-loader_spinner,
+        html.is-experience-loading .c-loader_spinner {
+            opacity: 1;
+            transition: opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+        
+        .c-spinner {
+            display: block;
+            width: 1.25rem;
+            height: 1.25rem;
+            border: 2px solid transparent;
+            border-top-color: currentColor;
+            border-right-color: currentColor;
+            border-radius: 50%;
+            -webkit-animation: loaderSpinner 0.3s linear infinite;
+            animation: loaderSpinner 0.3s linear infinite;
+        }
+        
+        @-webkit-keyframes loaderSpinner {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes loaderSpinner {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .c-logo-intro {
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 50%;
+            width: 6.8125rem;
+            height: 1.25rem;
+            z-index: 999;
+            pointer-events: none;
+        }
+        
+        html.has-logo-revealed .c-logo-intro {
+            visibility: hidden;
+        }
+        
+        .c-logo-intro_part {
+            display: block;
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transform: translate(0, 100px);
+        }
+    </style>
+
+    <link id="main-css" rel="stylesheet" href="assets/styles/main.css" onload="this.onload=null;this.rel='stylesheet';this.setAttribute('data-is-loaded', true)" as="style" data-is-loaded="true">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-DQ27QH7PVB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-DQ27QH7PVB');
+    </script>
+    <style type="text/css">
+        @font-face {
+            font-family: Roboto;
+            src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf");
+        }
+    </style>
 </head>
-<style>
-    .coll {
-        color: red;
-        font-weight: 900;
-    }
-    
-    .hlo {
-        color: rgb(255, 255, 255);
-        font-weight: 900;
-    }
-    
-    .hovv:hover {
-        color: red;
-    }
-</style>
 
-<body id="page-top">
-    <nav class="navbar navbar-expand-lg   fixed-top nav-transparent navbar-dark " id="hllo">
-        <div class="container-fluid">
-            <a class="navbar-brand " href="#page-top"><img src="imge/pngegg (3).png" alt="..." /></a>
-            <a class="navbar-brand fs-1 hlo" href="#page-top"><span class="coll fs-1">MTSR </span>RSTN </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmeun" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon text-danger"></span>
-          </button>
-            <div class="collapse navbar-collapse my-3  " id="mainmeun">
-                <ul class="nav justify-content-end  text-uppercase ms-auto py-4 py-lg-0">
+<body data-module-load="m1">
 
-                    <li class="nav-item">
-                        <a class="nav-link text-light hovv" href="#">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light hovv" href="#">mainmeun</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light hovv" href="#">home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light hovv" href="#">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light hovv" href="#">contact us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light hovv" href="#">en</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light hovv" href="#">tr</a>
-                    </li>
-                </ul>
-
-            </div>
+    <!-- Load fonts -->
+    <div aria-hidden="true" class="u-screen-reader-text" style="font-family: 'Lexend'; font-style: normal; font-weight: 300; ">&nbsp;</div>
+    <div aria-hidden="true" class="u-screen-reader-text" style="font-family: 'Lexend'; font-style: normal; font-weight: 400; ">&nbsp;</div>
+    <div aria-hidden="true" class="u-screen-reader-text" style="font-family: 'Lexend'; font-style: normal; font-weight: 500; ">&nbsp;</div>
+    <div aria-hidden="true" class="u-screen-reader-text" style="font-family: 'Libre Caslon Text'; font-style: normal; font-weight: normal; ">&nbsp;</div>
+    <div aria-hidden="true" class="u-screen-reader-text" style="font-family: 'Libre Caslon Text'; font-style: italic; font-weight: normal; ">&nbsp;</div>
 
 
-        </div>
-    </nav>
-
-
-    <div id="carouselExampleDark" class="carousel carousel-dark " data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="5000">
-                <img src="imge/rs1.jpg" class="d-block w-100 " alt="..." style="height: 670px;">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 class="text-light ffw  fs-1">First slide label</h5>
-                    <p class="text-light   ffw">Some representative placeholder content for the first slide.</p>
-                </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-                <img src="imge/rs2.jpg" class="d-block w-100 " alt="..." style="height: 670px;">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 class="text-light ffw fs-1">Second slide label</h5>
-                    <p class="text-light ffw">Some representative placeholder content for the second slide.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="imge/rs3.jpg" class="d-block w-100 " alt="..." style="height: 670px;">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 class="text-light ffw fs-1">Third slide label</h5>
-                    <p class="text-light ffw">Some representative placeholder content for the third slide.</p>
-                </div>
-            </div>
-        </div>
-
+    <div class="c-logo-intro" data-module-logo="m2" style="transform: translate(-50%, 0%) translate3d(0px, 76px, 0px);">
+        <span class="c-logo-intro_part" data-logo="part" style="opacity: 1; visibility: inherit; transform: translate(0px, 0px);">
+            <svg aria-hidden="true" data-logo="letter" class="svg-logo" focusable="false" style="transform: translate(0px, 0px);">
+                <use xlink:href="assets/images/sprite.svg#logo-h"> </use>
+            </svg>
+        </span>
+        <span class="c-logo-intro_part" data-logo="part" style="opacity: 1; visibility: inherit; transform: translate(0px, 0px);">
+            <svg aria-hidden="true" data-logo="letter" class="svg-logo" focusable="false" style="transform: translate(0px, 0px);">
+                <use xlink:href="assets/images/sprite.svg#logo-a"></use>
+            </svg>
+        </span>
+        <span class="c-logo-intro_part" data-logo="part" style="opacity: 1; visibility: inherit; transform: translate(0px, 0px);">
+            <svg aria-hidden="true" data-logo="letter" class="svg-logo" focusable="false" style="transform: translate(0px, 0px);">
+                <use xlink:href="assets/images/sprite.svg#logo-v"></use>
+            </svg>
+        </span>
+        <span class="c-logo-intro_part" data-logo="part" style="opacity: 1; visibility: inherit; transform: translate(0px, 0px);">
+            <svg aria-hidden="true" data-logo="letter" class="svg-logo" focusable="false" style="transform: translate(0px, 0px);">
+                <use xlink:href="assets/images/sprite.svg#logo-e"></use>
+            </svg>
+        </span>
+        <span class="c-logo-intro_part" data-logo="part" style="opacity: 1; visibility: inherit; transform: translate(0px, 0px);">
+            <svg aria-hidden="true" data-logo="letter" class="svg-logo" focusable="false" style="transform: translate(0px, 0px);">
+                <use xlink:href="assets/images/sprite.svg#logo-n"></use>
+            </svg>
+        </span>
     </div>
 
+    <div class="c-loader">
+        <div class="c-loader_spinner || c-spinner"></div>
+    </div>
+
+    <div data-load-container="" class="">
+
+        <!-- menu modal -->
+        <div class="c-menu-modal || c-modal" data-module-menu-modal="m52" aria-label="menu Modal" tabindex="-1" aria-hidden="false">
+            <div class="c-menu-modal_container || c-modal_container">
+                <button class="c-menu-modal_close || c-modal_close || c-button" data-menu-modal="close" type="button" tabindex="0" aria-label="Close let's demo modal" data-cursor="hover">
+                    <span class="c-button_label || u-screen-reader-text">Close menu modal</span>
+                    <span class="c-button_icon">
+                        <svg aria-hidden="true" class="svg-cross || u-hide-to-small" focusable="false"><use xlink:href="assets/images/sprite.svg#cross"></use></svg>
+                        <svg aria-hidden="true" class="svg-cross-mobile || u-hide-from-small" focusable="false"><use xlink:href="assets/images/sprite.svg#cross-mobile"></use></svg>
+                    </span>
+                </button>
+
+                <div class="c-modal_scrollable">
+                    <div class="c-modal_inner || u-anim_ref" data-menu-modal="anim">
+                        <div class="c-menu-modal_layout">
+                            <div class="c-menu-modal_col">
+                                <div class="c-menu-modal_content">
+                                    <div class="c-menu-modal_grid">
+                                        <div class="c-menu-modal_grid_logo || u-gc-1/2">
+                                            <a class="c-link -nav" href="en" data-cursor="hover">
+                                                <span class="u-screen-reader-text">Haven Studios</span>
+                                                <svg aria-hidden="true" class="svg-logo-min" focusable="false"><use xlink:href="assets/images/sprite.svg#logo-min"></use></svg>
+                                            </a>
+                                            <a class="c-menu-modal_logo || c-link -nav || u-hide-from-small" href="en" data-cursor="hover">
+                                                <span class="u-screen-reader-text">Home</span>
+                                                <svg aria-hidden="true" class="svg-logo" focusable="false"><use xlink:href="assets/images/sprite.svg#logo"></use></svg>
+                                            </a>
+                                        </div>
+                                        <div class="c-menu-modal_grid_description || u-gc-2/4">
+                                            <div class="c-menu-modal_description || c-wysiwyg -layout-small || u-hide-to-small">
+                                                <p>Haven is a creative space where ideas, passion, and fearless optimism thrive.</p>
+                                            </div>
+                                            <nav class="c-nav-socials">
+                                                <ul class="c-nav-socials_list">
+                                                    <li class="c-nav-socials_item">
+                                                        <a class="c-button -round -icon" data-cursor="hover" href="https://twitter.com/havenstudiosinc" rel="noopener" target="_blank">
+                                                            <span class="c-button_label || u-screen-reader-text">Twitter</span>
+                                                            <span class="c-button_icon">
+                                                                <svg aria-hidden="true" class="svg-twitter" focusable="false"><use xlink:href="assets/images/sprite.svg#twitter"></use></svg>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="c-nav-socials_item">
+                                                        <a class="c-button -round -icon" data-cursor="hover" href="https://linkedin.com/company/haven-studios-inc" rel="noopener" target="_blank">
+                                                            <span class="c-button_label || u-screen-reader-text">LinkedIn</span>
+                                                            <span class="c-button_icon">
+                                                                <svg aria-hidden="true" class="svg-linkedin" focusable="false"><use xlink:href="assets/images/sprite.svg#linkedin"></use></svg>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="c-nav-socials_item">
+                                                        <a class="c-button -round -icon" data-cursor="hover" href="https://instagram.com/havenstudiosinc" rel="noopener" target="_blank">
+                                                            <span class="c-button_label || u-screen-reader-text">Instagram</span>
+                                                            <span class="c-button_icon">
+                                                                <svg aria-hidden="true" class="svg-instagram" focusable="false"><use xlink:href="assets/images/sprite.svg#instagram"></use></svg>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="c-nav-socials_item">
+                                                        <a class="c-button -round -icon" data-cursor="hover" href="mailto:contact@havenstudios.com" rel="noopener" target="_blank">
+                                                            <span class="c-button_label || u-screen-reader-text">Email</span>
+                                                            <span class="c-button_icon">
+                                                                <svg aria-hidden="true" class="svg-mail" focusable="false"><use xlink:href="assets/images/sprite.svg#mail"></use></svg>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                        <div class="c-menu-modal_grid_nav || u-gc-1/9 u-gc-5/9@from-small u-gc-6/9@from-large">
+                                            <nav class="c-nav" style="--item-count: 4;">
+                                                <ul class="c-nav_list" data-footer-nav="nav">
+                                                    <li class="c-nav_list_item">
+                                                        <a class="c-nav_list_link || c-link -nav-menu" data-cursor="hover" href="en">
+                                                            <span class="c-link_label">Home</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="c-nav_list_item">
+                                                        <a class="c-nav_list_link || c-link -nav-menu" data-cursor="hover" href="en/culture">
+                                                            <span class="c-link_label">Culture</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="c-nav_list_item">
+                                                        <a class="c-nav_list_link || c-link -nav-menu" data-cursor="hover" href="en/careers">
+                                                            <span class="c-link_label">Careers<sup>13</sup></span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="c-nav_list_item">
+                                                        <a class="c-nav_list_link || c-link -nav-menu" data-cursor="hover" href="en/blog">
+                                                            <span class="c-link_label">Blog</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+
+                                            <a class="c-nav_langswitcher || c-button -access -light" data-cursor="hover" href="https://havenstudios.com/fr" data-load="false">
+                                                <span class="c-button_label">FR</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="c-menu-modal_logo || u-hide-to-small">
+                                        <div class="c-menu-modal_logo_inner">
+                                            <svg aria-hidden="true" class="svg-logo-wide" focusable="false"><use xlink:href="assets/images/sprite.svg#logo-wide"></use></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="c-modal_overlay" tabindex="0" aria-label="Close menu modal" data-menu-modal="close"></div>
+
+            <div class="c-menu-modal_spinner || c-spinner"></div>
+        </div>
+        <div class="o-scroll" data-module-scroll="main">
+
+            <header class="c-header">
+                <h1 class="u-screen-reader-text">Haven Studios</h1>
+
+                <div class="c-header_inner">
+                    <div class="c-header_top || o-container">
+
+                        <a class="c-header_link || u-anim-intro -delay-1" href="en" data-cursor="hover">
+                            <span class="u-screen-reader-text">Haven Studios</span>
+                            <svg aria-hidden="true" focusable="false" class="svg-logo-min"><use xlink:href="assets/images/sprite.svg#logo-min"></use></svg>
+                        </a>
 
 
+                        <button class="c-burger || u-anim-intro -delay-3 || c-header_link" type="button" aria-label="Toggle menu" data-module-menu-toggler="m53" data-cursor="hover">
+                    <span class="u-screen-reader-text">Menu</span>
+        
+                    <span class="c-burger_open">
+                        <span class="c-burger_line -top"></span>
+                        <span class="c-burger_line -bottom"></span>
+                    </span>
+                </button>
 
-    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+                    </div>
+                </div>
+                <div class="c-breadcrumb">
+                    <p class="c-breadcrumb_inner">
+                        <a class="c-breadcrumb_logo || c-header_link || u-anim-intro -delay-2 || js-logo" href="en" data-cursor="hover">
+                            <span class="u-screen-reader-text">Home</span>
+                            <svg aria-hidden="true" class="svg-logo" focusable="false"><use xlink:href="assets/images/sprite.svg#logo"></use></svg>
+                        </a>
+                    </p>
+                </div>
+            </header>
+
+            <div class="c-hero -home" data-scroll-section="">
+                <div class="c-hero_sticky-area" id="hero-sticky-area"></div>
+                <div class="c-experiences is-inview" data-module-experiences="m54" data-experiences-images="{&quot;portalImage&quot;:&quot;\/assets\/images\/experience\/portal-blur.jpg?v=202203241345&quot;,&quot;maskImage&quot;:&quot;\/assets\/images\/experience\/mask.png?v=202203241345&quot;,&quot;noiseImage&quot;:&quot;\/assets\/images\/experience\/normalMap.jpg?v=202203241345&quot;,&quot;depthImages&quot;:[{&quot;id&quot;:&quot;1&quot;,&quot;background&quot;:&quot;uploads\/portals\/Concept_03_RGB-1920x1080.jpg&quot;,&quot;depthmap&quot;:&quot;uploads\/portals\/Concept_03_DEPTH-1920x1080.jpg&quot;},{&quot;id&quot;:&quot;2&quot;,&quot;background&quot;:&quot;uploads\/portals\/Concept_04_RGB-1920x1080.jpg&quot;,&quot;depthmap&quot;:&quot;uploads\/portals\/Concept_04_DEPTH13-1920x1080.jpg&quot;},{&quot;id&quot;:&quot;3&quot;,&quot;background&quot;:&quot;uploads\/portals\/Concept_06_RGB_V1-1920x1080.jpg&quot;,&quot;depthmap&quot;:&quot;uploads\/portals\/Concept_06_DEPTH_V1-1920x1080.jpg&quot;},{&quot;id&quot;:&quot;4&quot;,&quot;background&quot;:&quot;uploads\/portals\/Concept_01_RGB-1920x1080.jpg&quot;,&quot;depthmap&quot;:&quot;uploads\/portals\/Concept_01_DEPTH-1920x1080.jpg&quot;}]}"
+                    data-scroll="" data-scroll-id="experience" data-scroll-sticky="" data-scroll-target="#hero-sticky-area" data-scroll-repeat="" data-scroll-call="toggleExperiences, Scroll">
+                    <div class="c-experiences_interactive" data-cursor="hover" data-experiences="interactiveArea" style="width: 186px; border-radius: 93px 93px 0px 0px;"></div>
+
+                    <div class="c-experiences_overlay" data-experiences="overlay"></div>
+
+                    <div class="c-experiences_inner" data-experiences="inner">
+
+                        <p class="c-experiences_hint || u-none@touch || u-anim-experience">
+                            <span class="c-text -hint">Click and Hold</span>
+                            <span class="c-text-serif -hint"> to enter the portal</span>
+                        </p>
+
+                        <p class="c-experiences_hint || u-none@hover || u-anim-experience">
+                            <span class="c-text -hint">Tap the portal</span>
+                            <span class="c-text-serif -hint">to enter</span>
+                        </p>
+
+                        <p class="c-experiences_scroll || u-anim-experience">
+                            <a class="c-button -scroll -accent -light" href="#introduction" data-cursor="hover" data-module-scroll-to="m55">
+                                <span class="c-button_icon">
+                                <svg aria-hidden="true" class="svg-arrow-bottom" focusable="false"><use xlink:href="assets/images/sprite.svg#arrow-bottom"></use></svg>
+                            </span>
+                                <span class="c-button_label">Scroll</span>
+                            </a>
+                        </p>
+
+                        <canvas width="714" height="1140" style="display: block; width: 357px; height: 570px;"></canvas></div>
+
+                    <div class="c-experiences_footer">
+                        <div class="o-container">
+                            <ul class="c-experiences_nav">
+                                <li class="c-experiences_nav_item || u-anim_ref is-active" data-experiences="navItem">
+                                    <div class="c-experiences_nav_content">
+                                        <!--
+                                    <div class="c-wysiwyg -layout-small || u-anim -delay-2">
+                                        <p><i>Landing Page</i></p>
+                                    </div>
+                                    -->
+                                    </div>
+                                    <div class="c-experiences_nav_cta">
+                                    </div>
+                                </li>
+                                <li class="c-experiences_nav_item || u-anim_ref" data-experiences="navItem">
+                                    <div class="c-experiences_nav_content">
+                                        <!--
+                                    <div class="c-wysiwyg -layout-small || u-anim -delay-2">
+                                        <p><i>Culture</i></p>
+                                    </div>
+                                    -->
+                                    </div>
+                                    <div class="c-experiences_nav_cta">
+                                        <a class="c-button -access -accent -light || u-anim -delay-5" href="en/culture" data-cursor="hover">
+                                            <span class="c-button_icon">
+                                            <svg aria-hidden="true" class="svg-arrow" focusable="false"><use xlink:href="assets/images/sprite.svg#arrow-right"></use></svg>
+                                        </span>
+                                            <span class="c-button_label">Culture</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="c-experiences_nav_item || u-anim_ref" data-experiences="navItem">
+                                    <div class="c-experiences_nav_content">
+                                        <!--
+                                    <div class="c-wysiwyg -layout-small || u-anim -delay-2">
+                                        <p><i>Careers</i></p>
+                                    </div>
+                                    -->
+                                    </div>
+                                    <div class="c-experiences_nav_cta">
+                                        <a class="c-button -access -accent -light || u-anim -delay-5" href="en/careers" data-cursor="hover">
+                                            <span class="c-button_icon">
+                                            <svg aria-hidden="true" class="svg-arrow" focusable="false"><use xlink:href="assets/images/sprite.svg#arrow-right"></use></svg>
+                                        </span>
+                                            <span class="c-button_label">Careers</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="c-experiences_nav_item || u-anim_ref" data-experiences="navItem">
+                                    <div class="c-experiences_nav_content">
+                                        <!--
+                                    <div class="c-wysiwyg -layout-small || u-anim -delay-2">
+                                        <p><i>Blog</i></p>
+                                    </div>
+                                    -->
+                                    </div>
+                                    <div class="c-experiences_nav_cta">
+                                        <a class="c-button -access -accent -light || u-anim -delay-5" href="en/blog" data-cursor="hover">
+                                            <span class="c-button_icon">
+                                            <svg aria-hidden="true" class="svg-arrow" focusable="false"><use xlink:href="assets/images/sprite.svg#arrow-right"></use></svg>
+                                        </span>
+                                            <span class="c-button_label">Blog</span>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--<div class="c-introduction" data-module-introduction>
+                <div class="c-introduction_inner" data-introduction="container"></div>
+            </div>-->
+            </div>
+
+
+            <!-- Push video -->
+            <div data-scroll-section="">
+                <div class="c-push-video" id="introduction" data-scroll="" data-scroll-id="pushVideo" data-scroll-offset="1%, 0%" data-module-push-video="m56" data-scroll-repeat="" data-scroll-call="togglePushVideo, Scroll">
+
+                    <div class="c-push-video_inner || o-padding -padding-xlarge-top -padding-xlarge-bottom">
+
+                        <div class="c-push-video_background" data-push-video="fading">
+                            <div class="c-push-video_sticky-area" id="push-video-sticky"></div>
+                            <div class="c-push-video_sticky" data-scroll="" data-scroll-sticky="" data-scroll-target="#push-video-sticky">
+                                <div class="c-push-video_visual" data-push-video="scaling">
+                                    <video class="c-push-video_media" autoplay="" playsinline="" muted="" loop="" data-push-video="video">
+                                <source src="https://havenstudios.com/assets/videos/haven-intro-portal.mp4" type="video/mp4">
+                            </video>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="c-push-video_content">
+                            <div class="c-push-video_content_inner || o-container">
+                                <div class="o-grid -col-8">
+                                    <div class="u-gc-1/9">
+                                        <div class="c-wysiwyg -large -sans-serif">
+                                            <p class="u-anim-text -line" data-scroll="" data-scroll-offset="30%" data-module-split-text="m57" style="--anim-text-total-lines:3;">
+                                                <div class="u-anim-text_line" style="display: block; text-align: center; position: relative; --anim-text-line-index:0;">Haven is a passionate team </div>
+                                                <div class="u-anim-text_line" style="display: block; text-align: center; position: relative; --anim-text-line-index:1;">of game makers working on </div>
+                                                <div class="u-anim-text_line" style="display: block; text-align: center; position: relative; --anim-text-line-index:2;">breakthrough experiences.</div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <script src="https://havenstudios.com/assets/scripts/vendors.js?v=202203241345" defer=""></script>
+            <script src="https://havenstudios.com/assets/scripts/app.js?v=202203241345" defer=""></script>
+
+
 </body>
+
+</html>

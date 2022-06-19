@@ -1,0 +1,535 @@
+.demo {
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#preloader {
+    background: rgb(0, 0, 0) url("image/lode55.gif")no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+}
+
+.move {
+    margin: 40px;
+}
+
+.fa-house {
+    color: aliceblue;
+}
+
+.ic {
+    color: aliceblue;
+}
+
+.coan {
+    background-color: rgb(131, 68, 190);
+}
+
+.siz {
+    font-size: 50px;
+}
+
+.overflow {
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
+
+#myVideo {
+    background-attachment: fixed;
+}
+
+.pr {
+    text-align: center;
+    position: relative;
+    top: -550px;
+    font-size: 30px;
+}
+
+@media screen and (max-width:600px) {
+    .pr {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .pr {
+        font-size: 10px;
+    }
+}
+
+body {
+    background-color: #0a0911;
+    color: rgb(53, 18, 87);
+}
+
+.fon {
+    margin-top: -500px;
+    margin-right: 300px;
+    font-size: 120px;
+    font-weight: 350;
+}
+
+.font {
+    margin-right: 550px;
+    font-size: 120px;
+    font-weight: 350;
+    font-style: oblique;
+    font-family: "Libre Caslon Text";
+}
+
+.font2 {
+    margin-left: 450px;
+    font-size: 120px;
+    font-weight: 350;
+    font-family: "Lexend";
+    margin-top: -100px;
+}
+
+.font3 {
+    font-family: "Lexend";
+    font-size: 120px;
+    margin-left: 300px;
+}
+
+.pf {
+    width: 180px;
+    margin-left: 250px;
+    font-family: "Libre Caslon Text";
+}
+
+.btn1 {
+    width: 200px;
+    border-radius: 20px;
+}
+
+.btn-outline-success {
+    color: aliceblue;
+    border-color: rgb(53, 18, 87);
+}
+
+.btn-outline-success:hover {
+    background-color: rgb(38, 13, 62);
+    border-color: rgb(53, 18, 87);
+}
+
+@media screen and (max-width:875px) {
+    .media {
+        font-size: 50px;
+    }
+    .pf {
+        margin-top: 300px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .media {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .media1 {
+        font-size: 5vw;
+        margin-top: -250px;
+    }
+    .media2 {
+        font-size: 5vw;
+        margin-top: -50px;
+    }
+    .media3 {
+        font-size: 5vw;
+        margin-top: -120px;
+        margin-right: 50px;
+    }
+    .media4 {
+        font-size: 5vw;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .media1 {
+        font-size: 5vw;
+        margin-top: -250px;
+    }
+    .media2 {
+        font-size: 5vw;
+        margin-top: -50px;
+    }
+    .media3 {
+        font-size: 5vw;
+        margin-top: -120px;
+        position: relative;
+        right: 150px;
+    }
+    .media4 {
+        font-size: 5vw;
+        margin-top: 30px;
+        margin-right: 50px;
+    }
+    .pf {
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .sizimg {
+        height: 300px;
+        width: 300px;
+    }
+    .media1 {
+        display: none;
+    }
+    .media2 {
+        margin-left: 150px;
+        margin-top: -150px;
+    }
+    .media3 {
+        display: none;
+    }
+    .media4 {
+        display: none;
+    }
+    .pf {
+        position: relative;
+        right: 170px;
+        top: -200px;
+    }
+}
+
+@media screen and (min-width:824px) {
+    .pf {
+        margin-top: -100px;
+        position: relative;
+        right: 150px;
+    }
+}
+
+.offcanvas.offcanvas-end {
+    width: 100%;
+}
+
+.offcanvas-header {
+    justify-content: end;
+    background-color: rgb(131, 68, 190);
+}
+
+.offcanvas.show:not(.hiding),
+.offcanvas.showing {
+    background-color: rgb(131, 68, 190);
+}
+
+.hor:hover {
+    background-color: #0a0911;
+}
+
+.Careers {
+    margin-top: 280px;
+    font-family: "Lexend";
+    font-size: 80px;
+    font-weight: 200;
+}
+
+.number {
+    margin-left: 390px;
+    font-family: "Lexend";
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.hr {
+    margin-top: 20px;
+}
+
+.hr:hover {
+    background-color: rgb(131, 68, 190);
+    width: 100%;
+    height: 120px;
+    margin-top: 20px;
+    transition: .75s linear;
+}
+
+.te {
+    margin-left: 300px;
+}
+
+.bi-arrow-right-circle-fill {
+    float: right;
+}
+
+.bi-arrow-right-circle-fill:hover {
+    color: rgb(27, 85, 173);
+}
+
+.pr2 {
+    width: 400px;
+    margin-top: 150px;
+}
+
+.btn2 {
+    float: right;
+    margin-right: 400px;
+    margin-top: -50px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.h11 {
+    margin-top: 270px;
+    font-size: 60px;
+}
+
+.width {
+    width: 600px;
+    height: 400px;
+}
+
+.tex {
+    margin-top: 50px;
+}
+
+.plic:hover {
+    color: blueviolet;
+}
+
+.kafe:hover {
+    color: blueviolet;
+}
+
+.dite:hover {
+    color: blueviolet;
+}
+
+.siz1 {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .75s;
+}
+
+.sizimg1 {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sizimg1,
+.siz1:hover {
+    transform: scale(1.15);
+}
+
+.im {
+    margin-left: 60px;
+    margin-top: 25px;
+    width: 400px;
+    height: 200px;
+}
+
+@media screen and (max-width:824px) {
+    .sizimg1 {
+        width: 200px;
+        height: 200px;
+    }
+    .im {
+        width: 200px;
+        height: 200px;
+        font-size: 10px;
+    }
+    .plic {
+        font-size: small;
+    }
+    .btn2 {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:324px) {
+    .sizimg1 {
+        width: 150px;
+        height: 150px;
+    }
+    .im {
+        width: 100px;
+        height: 100px;
+        font-size: 10px;
+    }
+    .plic {
+        font-size: small;
+    }
+    .h11 {
+        font-size: 20px;
+    }
+    .btn2 {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width:658px) {
+    .btn2 {
+        position: relative;
+        left: 300px;
+        width: 150px;
+        height: 60px;
+    }
+    .Careers {
+        font-size: 40px;
+    }
+}
+
+.im3 {
+    position: relative;
+    left: 50px;
+    width: 200px;
+    height: 200px;
+}
+
+.siz4 {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .75s;
+}
+
+.sizimg4 {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sizimg4,
+.siz4:hover {
+    transform: scale(1.15);
+}
+
+.siz3 {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .75s;
+}
+
+.sizimg3 {
+    width: 350px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sizimg3,
+.siz3:hover {
+    transform: scale(1.15);
+}
+
+.tx4 {
+    position: relative;
+    left: 500px;
+}
+
+@media screen and (max-width:824px) {
+    .sizimg4 {
+        width: 300px;
+        height: 200px;
+    }
+    .sizimg3 {
+        width: 150px;
+        height: 110px;
+    }
+    .tex3 {
+        display: none;
+    }
+    .tx4 {
+        display: none;
+    }
+    .end,
+    .btn4 {
+        position: relative;
+        right: 200px;
+    }
+}
+
+@media screen and (max-width:756px) {
+    .sizimg4 {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width:325px) {
+    .sizimg4 {
+        width: 100px;
+        height: 100px;
+    }
+    .sizimg3 {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.btn3 {
+    width: 200px;
+    border-radius: 20px;
+    margin-left: 500px;
+    margin-top: 100px;
+}
+
+.let {
+    font-size: 150px;
+    font-style: oblique;
+    font-weight: 400;
+}
+
+.end {
+    width: 400px;
+    margin-left: 350px;
+    font-family: "Libre Caslon Text";
+}
+
+.btn4 {
+    width: 180px;
+    border-radius: 20px;
+    margin-left: 450px;
+}
+
+@media screen and (max-width:656px) {
+    .let {
+        font-size: 50px;
+    }
+    .btn4,
+    .end {
+        position: relative;
+        right: 290px;
+    }
+}
+
+@media screen and (max-width:326px) {
+    .let {
+        font-size: 50px;
+    }
+    .end {
+        font-size: small;
+        width: 200px;
+        position: relative;
+        right: 300px;
+    }
+    .btn4 {
+        position: relative;
+        right: 400px;
+    }
+}
